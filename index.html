@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+    <head>
+        <script src="./node_modules/zone.js/dist/zone.js"></script>
+        <script src="./node_modules/reflect-metadata/Reflect.js"></script>
+        <script src="./node_modules/systemjs/dist/system.src.js"></script>
+        <script src="./systemjs.config.js"></script>
+        <script>
+            System.import('./dist/out-tsc/main.js').catch ( e => console.log( e ) );
+        </script>
+    </head>
+    <body>
+        index.html
+        <app></app>
+    </body>
+</html>
