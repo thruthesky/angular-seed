@@ -1,16 +1,23 @@
 {
-  "compileOnSave": false,
+  "exclude": [
+    "node_modules"
+  ],
+
+  "files": [
+    "main.ts"
+  ],
   "compilerOptions": {
-    "outDir": "./dist",
+    "target": "es5",
+    "watch": false,
     "sourceMap": true,
     "declaration": false,
-    "moduleResolution": "node",
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "target": "es5",
+    "noImplicitAny": false,
+    "removeComments": true,
+    "noLib": false,
     "lib": [
       "es2016",
       "dom"
-    ]
+    ],
+    "outDir": "./dist"
   }
 }
